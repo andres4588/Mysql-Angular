@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "equipos"
+    }
+  },
+  "defaultProject": "equipos",
+  "cli": {
+    "analytics": false
+  }
 }

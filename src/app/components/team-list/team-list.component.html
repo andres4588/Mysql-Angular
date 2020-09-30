@@ -1,0 +1,19 @@
+<div class="col-sm-6 col-md-3 mt-3"  *ngFor="let team of teams">
+  <div class="card text-center">
+    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+      {{team.title}}
+      <button class="btn btn-danger" (click)="deleteTeam(team.id)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </div>
+    <img src="{{team.image}}" class="card-img-top">
+    <div class="card-body">
+      <p>{{team.description}}</p>
+      <a [routerLink]="['/teams/edit', team.id]" class="btn btn-info btn-block"  >
+        EDIT TEAM
+      </a>
+    </div>
+  </div>
+</div>
+
+
